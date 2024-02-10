@@ -14,6 +14,8 @@ nav {
     background-color: #eff7fa;
 
     box-shadow: 0 0 5px black;
+
+    z-index: 10;
 }
 
 nav > #logo-group {
@@ -72,6 +74,8 @@ nav > #profile-group > #profile {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 nav > #profile-group > #profile > #profile-name {
     color: #606060;
@@ -87,7 +91,61 @@ nav > #profile-group > #profile > #profile-arrow-wrapper > #profile-arrow {
 
     transition: all 0.2s ease;
 }
-nav > #profile-group > #profile > #profile-arrow-wrapper:hover #profile-arrow {
+nav > #profile-group > #profile:hover {
+    cursor: pointer;
+}
+nav > #profile-group > #profile:hover #profile-arrow {
     cursor: pointer;
     transform: scaleX(-1);
+}
+nav > #profile-group > #profile:hover #profile-dropdown {
+    top: -7vh;
+    z-index: 5;
+}
+
+#profile-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    height: 230px;
+    width: 200px;
+
+    top: calc(-7vh - 120px);
+    z-index: -1;
+
+    transition: all 0.2s ease;
+}
+#profile-dropdown > .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 100px;
+    width: 200px;
+
+    background-color: #fff;
+    border-radius: 10px;
+
+    box-shadow: 0 0 16px black;
+}
+#profile-dropdown > .buttons-wrapper > span {
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    width: 90%;
+    text-align: center;
+}
+#profile-dropdown > .buttons-wrapper > span:hover {
+    color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+#profile-dropdown > .buttons-wrapper > #profile-btn:hover {
+    background: linear-gradient(45deg, #00ba81 33%, #00a672 66%, #069268);
+}
+#profile-dropdown > .buttons-wrapper > #logout-btn:hover {
+    background: linear-gradient(45deg, #ff3232 33%, #da0d0d 66%, #bd0000);
 }

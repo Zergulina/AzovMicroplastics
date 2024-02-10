@@ -29,6 +29,8 @@ nav > #logo-group {
     margin: 0 10px 0 10px;
 
     background-color: aliceblue; 
+
+    cursor: pointer;
 }
 nav > #logo-group > img#logo-pic {
     object-fit: scale-down;
@@ -106,8 +108,10 @@ nav > #profile-group > #profile:hover #profile-arrow {
     transform: scaleX(-1);
 }
 nav > #profile-group > #profile:hover #profile-dropdown {
-    top: -7vh;
-    z-index: 5;
+    bottom: calc(-2vh - 120px);
+}
+nav > #profile-group > #profile:hover #profile-dropdown > .buttons-wrapper {
+    z-index: 0;
 }
 
 #profile-dropdown {
@@ -120,9 +124,8 @@ nav > #profile-group > #profile:hover #profile-dropdown {
     height: 230px;
     width: 200px;
 
-    top: calc(-7vh - 120px);
-    z-index: -1;
-
+    bottom: calc(-2vh + 20px);
+    /* background-color: red; */
     transition: all 0.2s ease;
 }
 #profile-dropdown > .buttons-wrapper {
@@ -139,6 +142,8 @@ nav > #profile-group > #profile:hover #profile-dropdown {
     border-radius: 10px;
 
     box-shadow: 0 0 16px black;
+
+    z-index: -1;
 }
 #profile-dropdown > .buttons-wrapper > span {
     border-radius: 5px;

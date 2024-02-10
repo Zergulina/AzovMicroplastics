@@ -35,13 +35,21 @@ nav > span.nav-btn {
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
 }
-nav > span.selected {
-    background-color: #fff;
+nav > span.nav-btn:hover {
+    /* background-color: #fff; */
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 
-    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-    background-clip: none;
-    -webkit-background-clip: text;
+    background: linear-gradient(45deg, #00ba81 33%, #00a672 66%, #069268);
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #0B2349;
+    color: #00ba81; */
+
+    color: #fff;
+}
+
+nav > #profile-group {
+
+}
+nav > #profile-group > img#notification-btn {
+    height: 5vh;
 }

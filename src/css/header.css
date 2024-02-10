@@ -28,7 +28,7 @@ nav > #logo-group {
 }
 nav > #logo-group > img#logo-pic {
     object-fit: scale-down;
-    height: 5vh;
+    height: 7vh;
 }
 nav > span.nav-btn {
     color: #808080;

@@ -12,6 +12,8 @@ nav {
     height: 7vh;
 
     background-color: #eff7fa;
+
+    box-shadow: 0 0 5px black;
 }
 
 nav > #logo-group {
@@ -29,9 +31,11 @@ nav > #logo-group {
 nav > #logo-group > img#logo-pic {
     object-fit: scale-down;
     height: 7vh;
+
+    filter: hue-rotate(-20deg);
 }
 nav > span.nav-btn {
-    color: #808080;
+    color: #606060;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
 }
@@ -49,8 +53,41 @@ nav > span.nav-btn:hover {
 }
 
 nav > #profile-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    margin-left: auto;
+    margin-right: 30px;
 }
 nav > #profile-group > img#notification-btn {
-    height: 5vh;
+    height: 3vh;
+    margin-right: 30px;
+
+    filter: brightness(0) saturate(100%) invert(39%) sepia(1%) saturate(1213%) hue-rotate(322deg) brightness(86%) contrast(77%);
+}
+nav > #profile-group > #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav > #profile-group > #profile > #profile-name {
+    color: #606060;
+}
+nav > #profile-group > #profile > #profile-arrow-wrapper {
+    height: 3vh;
+    width: 3vh;
+}
+nav > #profile-group > #profile > #profile-arrow-wrapper > #profile-arrow {
+    height: 3vh;
+    rotate: -90deg;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(1%) saturate(1213%) hue-rotate(322deg) brightness(86%) contrast(77%);
+
+    transition: all 0.2s ease;
+}
+nav > #profile-group > #profile > #profile-arrow-wrapper:hover #profile-arrow {
+    cursor: pointer;
+    transform: scaleX(-1);
 }

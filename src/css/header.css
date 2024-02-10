@@ -45,6 +45,7 @@ nav > span.nav-btn:hover {
     color: #00ba81; */
 
     color: #fff;
+    cursor: pointer;
 }
 
 nav > #profile-group {

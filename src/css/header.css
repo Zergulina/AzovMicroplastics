@@ -66,8 +66,15 @@ nav > #profile-group {
 nav > #profile-group > img#notification-btn {
     height: 3vh;
     margin-right: 30px;
-
+    border-radius: 90px;
+    padding: 5px;
     filter: brightness(0) saturate(100%) invert(39%) sepia(1%) saturate(1213%) hue-rotate(322deg) brightness(86%) contrast(77%);
+}
+nav > #profile-group > img#notification-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #00ba81 33%, #00a672 66%, #069268);
+    filter: none;
 }
 nav > #profile-group > #profile {
     display: flex;

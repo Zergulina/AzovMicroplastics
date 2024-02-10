@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="deco.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="container.css">
-    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
@@ -24,13 +20,13 @@
                     <form class="form-container">
                         <div class="input-group">
                             <div class="input-wrap">
-                                <input type="text" name="username" placeholder="Почта">
+                                <input type="text" id="username" placeholder="Почта">
                             </div>
                             <div class="input-wrap">
-                                <input type="password" name="password" placeholder="Пароль">
+                                <input type="password" id="password" placeholder="Пароль">
                             </div>
                             <div class="input-wrap">
-                                <input type="password-rep" name="password-rep" placeholder="Повторить пароль">
+                                <input type="password" id="password-rep" placeholder="Повторить пароль">
                             </div>
                         </div>
                         <div class="submit-group">
@@ -40,7 +36,7 @@
                         </div>
                         <div class="others-group">
                             <div class="input-wrap">
-                                <input class="submit-btn" id="login-btn" type="submit" name="submit" value="У меня уже есть аккаунт">
+                                <input class="submit-btn" id="login-btn" type="submit" name="submit" value="Уже есть аккаунт">
                             </div>
                             <div class="input-wrap">
                                 <input class="submit-btn" id="forgot-btn" type="submit" name="submit" value="Я забыл пароль">
@@ -51,7 +47,13 @@
             </div>
         </div>
         <div class="deco-wrapper">
-            <div class="wave"></div>
+            <div class="waves">
+                <div class="img-cont">
+                    <img src="/assets/waves/wave1.png">
+                    <img src="/assets/waves/wave2.png">
+                    <img src="/assets/waves/wave3.png">
+                </div>
+            </div>
             <div class="sand"></div>
         </div>
     </div>

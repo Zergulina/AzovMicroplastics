@@ -27,7 +27,7 @@ function onRegSubmit() {
     }
 
     sessionStorage.setItem("user_email", email);
-    window.open("../html/project.html", "_self");
+    window.open("../html/user-main-page.html", "_self");
 }
 
 // TODO:
